@@ -4,3 +4,40 @@
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+.wrapper {
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.result {
+    border-radius: 10px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+    color: hsl(0, 0%, 100%);
+}
+
+.summary {
+    color: hsl(224, 30%, 27%);
+}
+
+.totalScore {
+    padding: 25px;
+    margin: auto 175px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+}
+button:active,
+button:hover {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+}
+
+ul {
+    list-style: none;
+}
