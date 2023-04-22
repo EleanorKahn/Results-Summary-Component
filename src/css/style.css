@@ -1,11 +1,18 @@
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    right: 50%;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
 .wrapper {
+    margin: 100px auto;
+    width: 700px;
+    height: 450px;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -16,15 +23,18 @@
     border-radius: 10px;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
     color: hsl(0, 0%, 100%);
+    width: 50%;
 }
 
 .summary {
     color: hsl(224, 30%, 27%);
+    width: 50%;
+    box-shadow: 10px 20px 10px hsl(221, 100%, 96%);
 }
+
 
 .totalScore {
     padding: 25px;
-    margin: auto 175px;
     border-radius: 50%;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
 }
@@ -32,6 +42,9 @@
 button {
     color: hsl(0, 0%, 100%);
     background-color: hsl(224, 30%, 27%);
+    height: 50px;
+    width: 200px;
+    border-radius: 25%;
 }
 button:active,
 button:hover {
@@ -40,4 +53,12 @@ button:hover {
 
 ul {
     list-style: none;
+}
+
+li {
+    padding: 10px;
+}
+
+p {
+    margin: 10px;
 }
