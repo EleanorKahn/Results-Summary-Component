@@ -48,6 +48,9 @@
 button {
     color: hsl(0, 0%, 100%);
     background-color: hsl(224, 30%, 27%);
+    width: 75%;
+    padding: 10px;
+    margin: 10px 0 30px;
 }
 button:active,
 button:hover {
@@ -57,10 +60,14 @@ button:hover {
 ul {
     list-style: none;
     font-weight: 400;
+
 }
 
 li {
     padding: 10px;
+    margin: 10px 0;
+    text-align: start;
+    justify-content: space-between;
 }
 
 p {
@@ -70,4 +77,8 @@ p {
 
 h1 {
     font-weight: 800;
+} 
+
+span {
+    text-align: end;
 }

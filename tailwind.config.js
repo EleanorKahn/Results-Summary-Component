@@ -15,7 +15,7 @@ module.exports = {
         "lightRoyalBlue": "hsl(241, 81%, 54%)",
         "violetBlue": "hsla(256, 72%, 46%, 1)",
         "persianBlue": "hsla(241, 72%, 46%, 0)"
-      }
+      },
     },
   },
   plugins: [],

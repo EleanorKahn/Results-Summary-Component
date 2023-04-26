@@ -6,17 +6,17 @@ const SummaryComponent = () => {
     <div className="summary px-6 py-10">
           <h3 className="font-medium">Summary</h3>
           <ul>
-            <li>Reaction
-            80 / 100</li>
+            <li className='text-lightRed'>Reaction
+            <span>80 / 100</span></li>
 
-            <li>Memory
-            92 / 100</li>
+            <li className='text-orangeYellow'>Memory
+            <span>92 / 100</span></li>
 
-            <li >Verbal
-            61 / 100</li>
+            <li className='text-greenTeal-400'>Verbal
+            <span>61 / 100</span></li>
 
-            <li className="mx-auto max-width-sm">Visual
-            72 / 100</li>
+            <li className="text-cobaltBlue mx-auto max-width-sm">Visual
+            <span>72 / 100</span></li>
           </ul>
           <Button className="px-8 rounded-full border">
             Continue
