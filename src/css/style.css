@@ -18,16 +18,17 @@
     margin: 100px auto;
     width: 700px;
     height: 450px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     font-family: Hanken Grotesk sans-serif;
+    background-color: white;
 }
 
 .result {
-    border-radius: 10px;
-    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+    border-radius: 15px;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
     width: 50%;
 }
@@ -36,22 +37,33 @@
     color: hsl(224, 30%, 27%);
     width: 50%;
     box-shadow: 10px 20px 10px hsl(221, 100%, 96%);
+    border-radius: 15px;
 }
 
 
 .totalScore {
-    padding: 25px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin-inline-start: 28%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+}
+
+.totalScore p {
+    color:hsla(0, 0%, 100%, .25)
 }
 
 button {
     color: hsl(0, 0%, 100%);
     background-color: hsl(224, 30%, 27%);
-    width: 75%;
+    width: 90%;
+    height: 55px;
     padding: 10px;
     margin: 10px 0 30px;
+    border-radius: 10px;
+    font-family: Hanken Grotesk, sans-serif;
 }
+
 button:active,
 button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -60,14 +72,18 @@ button:hover {
 ul {
     list-style: none;
     font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
 
 }
 
 li {
     padding: 10px;
-    margin: 10px 0;
+    border-radius: 10px;
+    height: 35px;
+    margin-bottom: 10px;
     text-align: start;
-    justify-content: space-between;
 }
 
 p {
@@ -80,5 +96,6 @@ h1 {
 } 
 
 span {
-    text-align: end;
+    align-self: flex-end;
+    float: right;
 }
