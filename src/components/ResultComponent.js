@@ -2,10 +2,10 @@ import React from 'react';
 
 const ResultComponent = () => {
   return (
-    <div className="result">
+    <div className="result text-sky-400">
         <h3>Your Result</h3>
         <div className="totalScore">
-            <h1 className="extrabold">76</h1>
+            <h1>76</h1>
             <p>of 100</p>
         </div>
         <h2 className="font-bold">Great</h2>
