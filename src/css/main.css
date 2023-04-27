@@ -463,4 +463,60 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-@tailwind components;
+.bg-cobaltBlue-100 {
+  background-color: hsl(234, 85%, 45%, .10);
+}
+.bg-darkGrayBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(224 30% 27% / var(--tw-bg-opacity));
+}
+.bg-greenTeal-100 {
+  background-color: hsla(166, 100%, 37%, .10);
+}
+.bg-lightRed-100 {
+  background-color: hsla(0, 100%, 67%, .10);
+}
+.bg-orangeYellow-100 {
+  background-color: hsla(39, 100%, 56%, .10);
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.text-start {
+  text-align: start;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.text-cobaltBlue {
+  --tw-text-opacity: 1;
+  color: hsl(234 85% 45% / var(--tw-text-opacity));
+}
+.text-darkGrayBlue {
+  --tw-text-opacity: 1;
+  color: hsl(224 30% 27% / var(--tw-text-opacity));
+}
+.text-greenTeal {
+  --tw-text-opacity: 1;
+  color: hsl(166 100% 37% / var(--tw-text-opacity));
+}
+.text-lightRed {
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 67% / var(--tw-text-opacity));
+}
+.text-orangeYellow {
+  --tw-text-opacity: 1;
+  color: hsl(39 100% 56% / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}

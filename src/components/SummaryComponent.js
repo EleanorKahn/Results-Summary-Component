@@ -4,21 +4,21 @@ import { Button } from "reactstrap";
 const SummaryComponent = () => {
   return (
     <div className="summary">
-          <h3>Summary</h3>
-          <ul>
-            <li style={{ backgroundColor: "hsla(0, 100%, 67%, .25)", color: "hsl(0, 100%, 67%)" }}className='text-lightRed'>Reaction
+          <h3 className='text-darkGrayBlue font-bold'>Summary</h3>
+          <ul className='px-5 text-start'>
+            <li className="text-lightRed bg-lightRed-100">Reaction
             <span><strong>80</strong> / 100</span></li>
 
-            <li style={{ backgroundColor: "hsla(39, 100%, 56%, .25)", color: "hsl(39, 100%, 56%)" }} className='text-orangeYellow'>Memory
+            <li className='text-orangeYellow bg-orangeYellow-100'>Memory
             <span><strong>92</strong> / 100</span></li>
 
-            <li style={{ backgroundColor: "hsla(166, 100%, 37%, .25)", color: "hsl(166, 100%, 37%)"}}className='text-greenTeal-400'>Verbal
+            <li className='text-greenTeal bg-greenTeal-100'>Verbal
             <span><strong>61</strong> / 100</span></li>
 
-            <li style={{ backgroundColor: "hsla(234, 85%, 45%, .25)", color: "hsl(234, 85%, 45%)" }}className="text-cobaltBlue mx-auto max-width-sm">Visual
+            <li className="text-cobaltBlue bg-cobaltBlue-100">Visual
             <span><strong>72</strong> / 100</span></li>
           </ul>
-          <Button className="px-8 rounded-full border">
+          <Button className="text-white bg-darkGrayBlue">
             Continue
           </Button>
         </div>
