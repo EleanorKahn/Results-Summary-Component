@@ -1,5 +1,3 @@
-import "./css/style.css";
-import './css/App.css';
 import SummaryComponent from "./components/SummaryComponent";
 import ResultComponent from "./components/ResultComponent";
 

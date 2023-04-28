@@ -21,10 +21,10 @@ module.exports = {
         "persianBlue": "hsla(241, 72%, 46%, 0)"
       },
       listStyleImage: {
-        iconMemory: "./assets/images/icon-memory.svg",
-        iconReaction: "./assets/images/icon-reaction.svg",
-        iconVerbal: "./assets/images/icon-verbal.svg",
-        iconVisual: "./assets/images/icon-visual.svg",
+        iconMemory: "./src/assets/images/icon-memory.svg",
+        iconReaction: "./src/assets/images/icon-reaction.svg",
+        iconVerbal: "./src/assets/images/icon-verbal.svg",
+        iconVisual: "./src/assets/images/icon-visual.svg",
       },
     },
   },

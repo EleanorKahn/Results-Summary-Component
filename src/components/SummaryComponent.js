@@ -1,22 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import { Button } from "reactstrap";
+import data from "../data/data.json";
 
 const SummaryComponent = () => {
+  const [scores, setScores] = useState(data);
+
+  useEffect(() => {
+    const request = "../data/data.json";
+    fetch(request)
+      .then((response) => {
+        console.log("I have fetched");
+        if (!response.ok) {
+          console.log("response was not ok");
+          throw new Error(`HTTP error: ${response.status}`);
+        }
+        console.log("before response json", response);
+        const data = response.json();
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error(`Message: ${error}`);
+      })
+  }, []);
+
   return (
     <div className="summary">
-          <h3 className='text-darkGrayBlue font-bold'>Summary</h3>
+          <h2 className='text-darkGrayBlue font-bold'>Summary</h2>
           <ul className='px-5 text-start'>
-            <li className="text-lightRed bg-lightRed-100">Reaction
-            <span><strong>80</strong> / 100</span></li>
-
-            <li className='text-orangeYellow bg-orangeYellow-100'>Memory
-            <span><strong>92</strong> / 100</span></li>
-
-            <li className='text-greenTeal bg-greenTeal-100'>Verbal
-            <span><strong>61</strong> / 100</span></li>
-
-            <li className="text-cobaltBlue bg-cobaltBlue-100">Visual
-            <span><strong>72</strong> / 100</span></li>
+            {scores.map((score, idx) => (
+              <li key={idx}>
+                <img src={score.icon} alt={score.category}/>
+                {score.category}
+                <span>{score.score} / 100</span>
+              </li>
+            ))}
           </ul>
           <Button className="text-white bg-darkGrayBlue">
             Continue
