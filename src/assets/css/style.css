@@ -19,7 +19,6 @@
     width: 700px;
     height: 450px;
     border-radius: 15px;
-    text-align: center;
     display: flex;
     flex-flow: row wrap;
     font-family: Hanken Grotesk sans-serif;
@@ -42,15 +41,11 @@
 
 
 .totalScore {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin-inline-start: 28%;
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
 }
 
 .totalScore p {
-    color:hsla(0, 0%, 100%, .25)
+    color:hsla(0, 0%, 100%, .25);
 }
 
 button {
@@ -58,8 +53,6 @@ button {
     background-color: hsl(224, 30%, 27%);
     width: 90%;
     height: 55px;
-    padding: 10px;
-    margin: 10px 0 30px;
     border-radius: 10px;
     font-family: Hanken Grotesk, sans-serif;
 }
@@ -72,12 +65,9 @@ button:hover {
 ul {
     list-style: none;
     font-weight: 400;
-    padding: 0 20px;
-
 }
 
 li {
-    padding: 10px;
     border-radius: 10px;
     height: 35px;
     margin-bottom: 10px;

@@ -5,28 +5,32 @@ import data from "../data/data.json";
 const SummaryComponent = () => {
   const [scores, setScores] = useState(data);
 
-  useEffect(() => {
-    const request = "../data/data.json";
-    fetch(request)
-      .then((response) => {
-        console.log("I have fetched");
-        if (!response.ok) {
-          console.log("response was not ok");
-          throw new Error(`HTTP error: ${response.status}`);
-        }
-        console.log("before response json", response);
-        const data = response.json();
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error(`Message: ${error}`);
-      })
-  }, []);
+  //can we not pull data from this json file 
+  //using the fetch api, as in below? Investigate
+  //https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data
+
+  // useEffect(() => {
+  //   const request = "../data/data.json";
+  //   fetch(request)
+  //     .then((response) => {
+  //       console.log("I have fetched");
+  //       if (!response.ok) {
+  //         console.log("response was not ok");
+  //         throw new Error(`HTTP error: ${response.status}`);
+  //       }
+  //       console.log("before response json", response);
+  //       const data = response.json();
+  //       console.log(data);
+  //     })
+  //     .catch((error) => {
+  //       console.error(`Message: ${error}`);
+  //     })
+  // }, []);
 
   return (
-    <div className="summary">
+    <div className="summary px-5">
           <h2 className='text-darkGrayBlue font-bold'>Summary</h2>
-          <ul className='px-5 text-start'>
+          <ul className="">
             {scores.map((score, idx) => (
               <li key={idx}>
                 <img src={score.icon} alt={score.category}/>
