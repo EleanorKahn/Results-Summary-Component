@@ -30,17 +30,17 @@ const SummaryComponent = () => {
   return (
     <div className="summary p-8">
           <h2 className='text-darkGrayBlue font-bold'>Summary</h2>
-          <ul className="py-5 text-center list-none">
+          <ul className="py-6 text-center list-none">
             {scores.map((score, idx) => (
               <li 
-                className="h-12 flex flex-row px-5 mb-4 align-middle rounded-lg items-center justify-between" 
+                className="h-12 flex flex-row px-4 mb-3 align-middle rounded-lg items-center justify-between" 
                 key={idx} 
                 style={{ 
                   color: score["text-color"], 
                   backgroundColor: score["background-color"] 
                 }}
               >
-                <h3 className="flex flex-row">
+                <h3 className="flex flex-row font-bold">
                   <img className="mr-2" src={score.icon} alt={score.category}/> 
                   {score.category}
                 </h3>
@@ -48,7 +48,7 @@ const SummaryComponent = () => {
               </li>
             ))}
           </ul>
-          <Button className="text-white bg-darkGrayBlue rounded-full">
+          <Button className="text-white bg-darkGrayBlue rounded-full h-12 w-full hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
             Continue
           </Button>
         </div>

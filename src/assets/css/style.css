@@ -42,24 +42,6 @@
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
 }
 
-button {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(224, 30%, 27%);
-    height: 55px;
-    width: 100%;
-    font-family: Hanken Grotesk, sans-serif;
-}
-
-button:active,
-button:hover {
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-
-p {
-    margin: 10px;
-    font-size: 18px;;
-}
-
 h1 {
     font-weight: 800;
 } 
