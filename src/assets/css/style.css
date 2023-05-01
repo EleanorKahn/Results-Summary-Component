@@ -51,27 +51,14 @@
 button {
     color: hsl(0, 0%, 100%);
     background-color: hsl(224, 30%, 27%);
-    width: 90%;
     height: 55px;
-    border-radius: 10px;
+    width: 100%;
     font-family: Hanken Grotesk, sans-serif;
 }
 
 button:active,
 button:hover {
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-}
-
-ul {
-    list-style: none;
-    font-weight: 400;
-}
-
-li {
-    border-radius: 10px;
-    height: 35px;
-    margin-bottom: 10px;
-    text-align: start;
 }
 
 p {
@@ -83,8 +70,3 @@ h1 {
     font-weight: 800;
 } 
 
-span {
-    align-self: flex-end;
-    float: right;
-    color: hsl(224, 30%, 27%);
-}

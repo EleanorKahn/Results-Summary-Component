@@ -28,18 +28,25 @@ const SummaryComponent = () => {
   // }, []);
 
   return (
-    <div className="summary px-5">
+    <div className="summary p-8">
           <h2 className='text-darkGrayBlue font-bold'>Summary</h2>
-          <ul className="">
+          <ul className="py-5 text-center list-none">
             {scores.map((score, idx) => (
-              <li key={idx}>
-                <img src={score.icon} alt={score.category}/>
+              <li 
+                className="h-10 px-5 mb-5 align-middle rounded-lg" 
+                key={idx} 
+                style={{ 
+                  color: score["text-color"], 
+                  backgroundColor: score["background-color"] 
+                }}
+              >
+                <img className="align-middle justify-start" src={score.icon} alt={score.category}/> 
                 {score.category}
-                <span>{score.score} / 100</span>
+                <span className="float-right text-darkGrayBlue"><span className="font-bold">{score.score}</span> / 100</span>
               </li>
             ))}
           </ul>
-          <Button className="text-white bg-darkGrayBlue">
+          <Button className="text-white bg-darkGrayBlue rounded-full">
             Continue
           </Button>
         </div>

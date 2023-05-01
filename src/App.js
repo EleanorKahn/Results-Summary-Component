@@ -1,10 +1,11 @@
+import { Container, Row, Col } from "reactstrap";
 import SummaryComponent from "./components/SummaryComponent";
 import ResultComponent from "./components/ResultComponent";
 
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
+      <div className="wrapper flex ">
         <ResultComponent />
         <SummaryComponent />
       </div>
