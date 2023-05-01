@@ -5,7 +5,7 @@ import ResultComponent from "./components/ResultComponent";
 function App() {
   return (
     <div className="App">
-      <div className="wrapper flex ">
+      <div className="wrapper flex flex-row">
         <ResultComponent />
         <SummaryComponent />
       </div>

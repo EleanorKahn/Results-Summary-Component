@@ -33,16 +33,18 @@ const SummaryComponent = () => {
           <ul className="py-5 text-center list-none">
             {scores.map((score, idx) => (
               <li 
-                className="h-10 px-5 mb-5 align-middle rounded-lg" 
+                className="h-12 flex flex-row px-5 mb-4 align-middle rounded-lg items-center justify-between" 
                 key={idx} 
                 style={{ 
                   color: score["text-color"], 
                   backgroundColor: score["background-color"] 
                 }}
               >
-                <img className="align-middle justify-start" src={score.icon} alt={score.category}/> 
-                {score.category}
-                <span className="float-right text-darkGrayBlue"><span className="font-bold">{score.score}</span> / 100</span>
+                <h3 className="flex flex-row">
+                  <img className="mr-2" src={score.icon} alt={score.category}/> 
+                  {score.category}
+                </h3>
+                <span className="float-right text-slate-400"><span className="font-bold text-darkGrayBlue">{score.score}</span> / 100</span>
               </li>
             ))}
           </ul>

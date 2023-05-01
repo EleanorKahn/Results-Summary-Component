@@ -2,9 +2,9 @@ import React from 'react';
 
 const ResultComponent = () => {
   return (
-    <div className="result p-8 text-center text-white">
+    <div className="result p-8 text-center items-center text-white">
         <h1 className='mb-8 font-bold'>Your Result</h1>
-        <div className="totalScore justify-center items-center w-26 h-26 rounded-full">
+        <div className="p-4 totalScore self-center w-36 h-36 rounded-full">
             <h2 className='text-2xl font-extrabold'>76</h2>
             <p>of 100</p>
         </div>
