@@ -18,7 +18,8 @@ module.exports = {
         "lightSlateBlue": "hsl(252, 100%, 67%)",
         "lightRoyalBlue": "hsl(241, 81%, 54%)",
         "violetBlue": "hsla(256, 72%, 46%, 1)",
-        "persianBlue": "hsla(241, 72%, 46%, 0)"
+        "persianBlue": "hsla(241, 72%, 46%, 0)",
+        "tWhite": "hsla(0, 0%, 100%, .25)",
       },
       listStyleImage: {
         iconMemory: "./src/assets/images/icon-memory.svg",
