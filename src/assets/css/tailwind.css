@@ -4,3 +4,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+* {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+

@@ -14,35 +14,15 @@
     color: hsl(228, 45%, 44%); 
 }
 
-.wrapper {
-    margin: 100px auto;
-    width: 650px;
-    height: 450px;
-    border-radius: 15px;
-    font-family: Hanken Grotesk sans-serif;
-    background-color: white;
-}
-
 .result {
     border-radius: 15px;
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(0, 0%, 100%);
-    width: 50%;
 }
 
 .summary {
-    color: hsl(224, 30%, 27%); 
-    width: 50%;
     box-shadow: 10px 20px 10px hsl(221, 100%, 96%);
     border-radius: 15px;
 }
 
 
-.totalScore {
-    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
-}
-
-h1 {
-    font-weight: 800;
-} 
 

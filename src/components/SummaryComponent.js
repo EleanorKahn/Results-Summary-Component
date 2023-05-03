@@ -1,5 +1,4 @@
-import React, { useState, useEffect} from 'react';
-import { Button } from "reactstrap";
+import React, { useState } from 'react';
 import data from "../data/data.json";
 
 const SummaryComponent = () => {
@@ -28,12 +27,12 @@ const SummaryComponent = () => {
   // }, []);
 
   return (
-    <div className="summary p-8">
-          <h2 className='text-darkGrayBlue font-bold'>Summary</h2>
+    <div className="summary p-8 text-darkGrayBlue">
+          <h2 className=' font-bold'>Summary</h2>
           <ul className="py-6 text-center list-none">
             {scores.map((score, idx) => (
               <li 
-                className="h-12 flex flex-row px-4 mb-3 align-middle rounded-lg items-center justify-between" 
+                className="flex flex-row h-10 px-4 mb-3 align-middle rounded-lg items-center justify-between" 
                 key={idx} 
                 style={{ 
                   color: score["text-color"], 
@@ -44,13 +43,13 @@ const SummaryComponent = () => {
                   <img className="mr-2" src={score.icon} alt={score.category}/> 
                   {score.category}
                 </h3>
-                <span className="float-right text-slate-400"><span className="font-bold text-darkGrayBlue">{score.score}</span> / 100</span>
+                <p className="float-right text-slate-400"><span className="font-bold text-darkGrayBlue">{score.score}</span> / 100</p>
               </li>
             ))}
           </ul>
-          <Button className="text-white bg-darkGrayBlue rounded-full h-12 w-full hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
+          <button className="text-white bg-darkGrayBlue rounded-full h-10 w-full  focus:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
             Continue
-          </Button>
+          </button>
         </div>
   );
 };
