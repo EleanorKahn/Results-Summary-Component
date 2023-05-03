@@ -499,14 +499,6 @@ video {
   height: 2.5rem;
 }
 
-.h-24{
-  height: 6rem;
-}
-
-.w-24{
-  width: 6rem;
-}
-
 .w-full{
   width: 100%;
 }
@@ -628,7 +620,7 @@ video {
 }
 
 .text-tWhite{
-  color: hsla(0, 0%, 100%, .25);
+  color: hsla(0, 0%, 100%, .40);
 }
 
 .text-white{
@@ -650,8 +642,16 @@ video {
     display: flex;
   }
 
+  .sm\:h-24{
+    height: 6rem;
+  }
+
   .sm\:h-screen{
     height: 100vh;
+  }
+
+  .sm\:w-24{
+    width: 6rem;
   }
 
   .sm\:items-center{
@@ -660,6 +660,17 @@ video {
 
   .sm\:justify-center{
     justify-content: center;
+  }
+}
+
+@media (min-width: 768px){
+
+  .md\:h-36{
+    height: 9rem;
+  }
+
+  .md\:w-36{
+    width: 9rem;
   }
 }
 
