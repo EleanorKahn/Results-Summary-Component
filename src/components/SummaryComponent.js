@@ -27,7 +27,7 @@ const SummaryComponent = () => {
   // }, []);
 
   return (
-    <div className="summary p-8 text-darkGrayBlue">
+    <div className="summary p-8 text-darkGrayBlue rounded-xl">
           <h2 className=' font-bold'>Summary</h2>
           <ul className="py-6 text-center list-none">
             {scores.map((score, idx) => (
@@ -47,7 +47,7 @@ const SummaryComponent = () => {
               </li>
             ))}
           </ul>
-          <button className="text-white bg-darkGrayBlue rounded-full h-10 w-full  focus:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
+          <button className="text-white bg-darkGrayBlue rounded-full h-10 w-full hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
             Continue
           </button>
         </div>

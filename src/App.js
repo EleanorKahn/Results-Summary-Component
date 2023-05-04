@@ -1,4 +1,3 @@
-import { Container, Row, Col } from "reactstrap";
 import SummaryComponent from "./components/SummaryComponent";
 import ResultComponent from "./components/ResultComponent";
 

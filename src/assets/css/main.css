@@ -499,6 +499,14 @@ video {
   height: 2.5rem;
 }
 
+.h-24{
+  height: 6rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
 .w-full{
   width: 100%;
 }
@@ -533,6 +541,10 @@ video {
 
 .rounded-lg{
   border-radius: 0.5rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
 }
 
 .bg-darkGrayBlue{
@@ -577,6 +589,11 @@ video {
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-6{
@@ -632,7 +649,7 @@ video {
     font-family: "Hanken Grotesk", sans-serif;
 }
 
-.focus\:bg-gradient-to-b:focus{
+.hover\:bg-gradient-to-b:hover{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
@@ -642,16 +659,16 @@ video {
     display: flex;
   }
 
-  .sm\:h-24{
-    height: 6rem;
+  .sm\:h-36{
+    height: 9rem;
   }
 
   .sm\:h-screen{
     height: 100vh;
   }
 
-  .sm\:w-24{
-    width: 6rem;
+  .sm\:w-36{
+    width: 9rem;
   }
 
   .sm\:items-center{
@@ -660,17 +677,6 @@ video {
 
   .sm\:justify-center{
     justify-content: center;
-  }
-}
-
-@media (min-width: 768px){
-
-  .md\:h-36{
-    height: 9rem;
-  }
-
-  .md\:w-36{
-    width: 9rem;
   }
 }
 
