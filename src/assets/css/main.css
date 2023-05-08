@@ -470,77 +470,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.float-right{
-  float: right;
-}
-
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-6{
-  margin-bottom: 1.5rem;
-}
-
-.mr-2{
-  margin-right: 0.5rem;
-}
-
-.flex{
-  display: flex;
-}
-
-.h-10{
-  height: 2.5rem;
-}
-
-.h-24{
-  height: 6rem;
-}
-
-.w-24{
-  width: 6rem;
-}
-
-.w-full{
-  width: 100%;
-}
-
 .list-none{
   list-style-type: none;
-}
-
-.flex-row{
-  flex-direction: row;
-}
-
-.flex-col{
-  flex-direction: column;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.justify-center{
-  justify-content: center;
-}
-
-.justify-between{
-  justify-content: space-between;
-}
-
-.rounded-full{
-  border-radius: 9999px;
-}
-
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 
 .rounded-xl{
@@ -580,33 +511,6 @@ video {
 .to-persianBlue{
   --tw-gradient-to: hsla(241, 72%, 46%, 1) var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
-}
-
-.p-8{
-  padding: 2rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-.text-center{
-  text-align: center;
-}
-
-.align-middle{
-  vertical-align: middle;
 }
 
 .text-3xl{
@@ -651,32 +555,5 @@ video {
 
 .hover\:bg-gradient-to-b:hover{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-@media (min-width: 640px){
-
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:h-36{
-    height: 9rem;
-  }
-
-  .sm\:h-screen{
-    height: 100vh;
-  }
-
-  .sm\:w-36{
-    width: 9rem;
-  }
-
-  .sm\:items-center{
-    align-items: center;
-  }
-
-  .sm\:justify-center{
-    justify-content: center;
-  }
 }
 
