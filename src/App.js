@@ -4,10 +4,10 @@ import ResultComponent from "./components/ResultComponent";
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
+      <main className="wrapper sm:flex">
         <ResultComponent />
         <SummaryComponent />
-      </div>
+      </main>
   
       <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
