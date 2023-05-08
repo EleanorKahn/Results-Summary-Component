@@ -27,27 +27,27 @@ const SummaryComponent = () => {
   // }, []);
 
   return (
-    <div className="summary p-8 text-darkGrayBlue rounded-xl">
-          <h2 className=' font-bold'>Summary</h2>
-          <ul className="py-6 text-center list-none">
+    <div className="summary text-darkGrayBlue rounded-xl">
+          <h2 className='font-bold'>Summary</h2>
+          <ul className="list-none">
             {scores.map((score, idx) => (
               <li 
-                className="flex flex-row h-10 px-4 mb-3 align-middle rounded-lg items-center justify-between" 
+                className="" 
                 key={idx} 
                 style={{ 
                   color: score["text-color"], 
                   backgroundColor: score["background-color"] 
                 }}
               >
-                <h3 className="flex flex-row font-bold">
-                  <img className="mr-2" src={score.icon} alt={score.category}/> 
+                <h3 className="font-bold">
+                  <img className="" src={score.icon} alt={score.category}/> 
                   {score.category}
                 </h3>
-                <p className="float-right text-slate-400"><span className="font-bold text-darkGrayBlue">{score.score}</span> / 100</p>
+                <p className="text-slate-400"><span className="font-bold text-darkGrayBlue">{score.score}</span> / 100</p>
               </li>
             ))}
           </ul>
-          <button className="text-white bg-darkGrayBlue rounded-full h-10 w-full hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
+          <button className="text-white bg-darkGrayBlue hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue">
             Continue
           </button>
         </div>

@@ -9,10 +9,6 @@
     color: hsl(228, 45%, 44%); 
 }
 
-.result {
-    color: hsl(0, 0%, 100%);
-}
-
 .summary {
     box-shadow: 10px 20px 10px hsl(221, 100%, 96%);
 }
