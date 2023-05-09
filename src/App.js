@@ -3,8 +3,8 @@ import ResultComponent from "./components/ResultComponent";
 
 function App() {
   return (
-    <div className="App">
-      <main className="wrapper sm:flex rounded-md">
+    <div className="App sm:flex sm:items-center sm:justify-center sm:h-screen sm:max-w-2xl sm:mx-auto">
+      <main className="wrapper sm:flex rounded-3xl">
         <ResultComponent />
         <SummaryComponent />
       </main>

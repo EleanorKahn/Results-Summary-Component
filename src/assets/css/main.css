@@ -522,6 +522,10 @@ video {
   justify-content: space-between;
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .rounded-full{
   border-radius: 9999px;
 }
@@ -592,9 +596,13 @@ video {
   text-align: center;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.align-middle{
+  vertical-align: middle;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -644,27 +652,42 @@ video {
 
 @media (min-width: 640px){
 
+  .sm\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .sm\:flex{
     display: flex;
   }
 
-  .sm\:h-24{
-    height: 6rem;
-  }
-
-  .sm\:w-24{
-    width: 6rem;
-  }
-}
-
-@media (min-width: 768px){
-
-  .md\:h-36{
+  .sm\:h-36{
     height: 9rem;
   }
 
-  .md\:w-36{
+  .sm\:h-screen{
+    height: 100vh;
+  }
+
+  .sm\:w-36{
     width: 9rem;
+  }
+
+  .sm\:max-w-2xl{
+    max-width: 42rem;
+  }
+
+  .sm\:items-center{
+    align-items: center;
+  }
+
+  .sm\:justify-center{
+    justify-content: center;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
