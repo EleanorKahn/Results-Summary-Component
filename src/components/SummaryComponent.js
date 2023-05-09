@@ -27,12 +27,12 @@ const SummaryComponent = () => {
   // }, []);
 
   return (
-    <section className="summary text-darkGrayBlue rounded-xl mx-4 flex-1">
-          <h2 className='font-bold'>Summary</h2>
-          <ul className="list-none">
+    <section className="py-6 px-4 text-darkGrayBlue rounded-xl flex-1 shadow-md">
+          <h2 className='font-bold mb-4'>Summary</h2>
+          <ul className="list-none mb-4">
             {scores.map((score, idx) => (
               <li 
-                className="flex flex-1 justify-between h-10 mb-2 rounded-md items-center px-2" 
+                className="flex flex-1 justify-between h-12 mb-2 rounded-md items-center px-2" 
                 key={idx} 
                 style={{ 
                   color: score["text-color"], 
@@ -47,7 +47,7 @@ const SummaryComponent = () => {
               </li>
             ))}
           </ul>
-          <button className="text-white bg-darkGrayBlue hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-full w-full h-10">
+          <button className="text-white bg-darkGrayBlue hover:bg-gradient-to-b from-lightSlateBlue to-lightRoyalBlue rounded-full w-full h-12">
             Continue
           </button>
         </section>

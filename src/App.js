@@ -4,7 +4,7 @@ import ResultComponent from "./components/ResultComponent";
 function App() {
   return (
     <div className="App">
-      <main className="wrapper sm:flex">
+      <main className="wrapper sm:flex rounded-md">
         <ResultComponent />
         <SummaryComponent />
       </main>

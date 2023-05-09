@@ -470,13 +470,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .mb-6{
@@ -491,8 +490,8 @@ video {
   display: flex;
 }
 
-.h-10{
-  height: 2.5rem;
+.h-12{
+  height: 3rem;
 }
 
 .w-full{
@@ -507,8 +506,16 @@ video {
   list-style-type: none;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .justify-between{
@@ -521,6 +528,10 @@ video {
 
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .rounded-xl{
@@ -567,6 +578,16 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -607,6 +628,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 * {
     font-family: "Hanken Grotesk", sans-serif;
 }
@@ -619,6 +646,25 @@ video {
 
   .sm\:flex{
     display: flex;
+  }
+
+  .sm\:h-24{
+    height: 6rem;
+  }
+
+  .sm\:w-24{
+    width: 6rem;
+  }
+}
+
+@media (min-width: 768px){
+
+  .md\:h-36{
+    height: 9rem;
+  }
+
+  .md\:w-36{
+    width: 9rem;
   }
 }
 
